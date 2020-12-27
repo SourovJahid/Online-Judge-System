@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Profile</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/admin.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content ="5">
+</head>
+<body>
+	<section class="header">
+		<h1>
+			ADMIN
+		</h1>
+		<p><a href="logout">logout</a></p>
+	</section>
+
+	<section class="container">
+		<ul>
+			<li><a href="#" style="margin-left: -35px;">Profile</a></li>
+			<li>
+				<div class="dropdown">
+					<button class="dropbtn">Education</button>
+					<div class="dropdown-content">
+					<a href="admineduaddview">Add & View Education</a>
+					<a href="admineduupdatedelete">Update & Delete Education</a>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">setter</a></li>
+			<li>
+				<div class="dropdown">
+					<button class="dropbtn">Category</button>
+					<div class="dropdown-content">
+						<a href="admincataddview">Add & View Category</a>
+						<a href="adminaddviewsubcat">Add SubCategory</a>
+						<a href="adminsubcatview">View SubCategory</a>
+						<a href="admincatupdatedelete">Update & Delete Category</a>
+					</div>
+				</div>	
+			</li>
+			<li style="border-right-style: none;"><a href="#">Setting</a></li>
+		</ul>
+	</section>
+
+	<section class="subcat">
+		<div class="viewcat">
+			<select>
+			    <option value="0">Select Category:</option>
+			    <option value="1">Audi</option>
+			    <option value="2">BMW</option>
+			    <option value="3">Citroen</option>
+			    <option value="4">Ford</option>
+			    <option value="5">Honda</option>
+			    <option value="6">Jaguar</option>
+			    <option value="7">Land Rover</option>
+			    <option value="8">Mercedes</option>
+			    <option value="9">Mini</option>
+			    <option value="10">Nissan</option>
+			    <option value="11">Toyota</option>
+			    <option value="12">Volvo</option>
+			</select>
+		</div>
+		<div class="addcat">
+			<div class="addsubcat">
+				<input type="text" name="">
+				<button>Add</button>	
+			</div>
+			
+		</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+body {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+
+.header {
+	width: 100%;
+	height: auto;
+	background: rgba(234,234,234,1);
+	border:1px solid white;
+}
+.header h1{
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 20px;
+}
+
+.container {
+	width: 100%;
+	height: 500px;
+	background: rgba(234,234,234,1);
+	float: left;
+}
+.container .sidebar{
+	width: 25%;
+	height: 300px;
+	background: #F0F0F0;
+	float: left;
+}
+.container .sidebar .image {
+	width: 230px;
+	height: 275px;
+	background: white;
+	border-top: 5px solid #1FAE66;
+	margin-top: 35px;
+	margin-left: 10px;
+	position: relative;
+}
+.container .sidebar .image img{
+	width: 177px;
+	height: 176px;
+	padding: 25px;
+	margin-top: 29px;
+
+}
+.container .sidebar .image h3{
+	background: #1EAE65;
+	position: absolute;
+	top: 210px;
+	left: 25px;
+	text-align: center;
+}
+.container .sidebar .image h3 a{
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 0 69px;
+
+}
+
+.container .sidebar .image h4{
+	background: #767676;
+	position: absolute;
+	top: 230px;
+	left: 25px;
+	text-align: center;
+	padding: 1px 0;
+}
+.container .sidebar .image h4 a{
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 0 52.6px;
+
+}
+
+
+.container .content {
+	width: 75%;
+	height: auto;
+	float: right;
+	background: #F0F0F0;
+}
+.container .content .menu {
+	margin-top: 20px;
+	width: 100%;
+}
+.container .content .menu ul {
+	list-style: none;
+	float: left;
+	background: #1FAE66;
+	width: 95%;
+	text-align: left;
+}
+.container .content .menu ul li {
+	float: left;
+	padding: 5px;
+	border-right: 1px solid #1C9D5C;
+	padding: 5px 20px;	
+}
+.container .content .menu ul li:hover{
+    background: #198B52;
+}
+.container .content .menu ul li a {
+	text-decoration: none;
+	text-align: left;
+	font-size: 12px;
+	cursor: pointer;
+	color: white;	
+}
+.container .content .subcon {
+	width: 100%;
+	height: auto;
+	position: relative;
+	left: 0;
+	top: 45px;
+	background: white;
+}
+.container .content .subcon .subconabout {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	background: white;
+}
+
+.container .content .subcon .subconabout a{
+	text-decoration: none;
+	width: 40px;
+	height: auto;
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 15px
+
+}
+.container .content .subcon .subconabout a img {
+	width: 30px;
+	height: 30px;
+}
+.container .content .subcon .subconabout h2 {
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-top: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+}
+.container .content .subcon .subconabout p{
+	float: right;
+}
+
+.container .content .subcon .subconabout p a{
+	text-decoration: none;
+	text-align: center;
+	background: #F89C2C;
+	font-size: 14px;
+	padding: 0 5px;
+	border-radius: 5px;
+	padding: 4px;
+}
+
+.container .content .subcon .sunconleft {
+	width: 50%;
+	height: 200px;
+	position: absolute;
+	float: left;
+	left: 0;
+	top: 50px;
+	background: white;
+}
+.container .content .subcon .sunconleft .subconleftside {
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.container .content .subcon .sunconleft .subconrightside {
+	width: 50%;
+	height: auto;
+	float: right;
+}
+.container .content .subcon .sunconleft p{
+	font-size: 14px;
+	padding-left: 10px;
+
+}
+.container .content .subcon .sunconleft a{
+	text-decoration: none;
+}
+
+
+.container .content .subcon .subconright {
+	width: 50%;
+	height: 200px;
+	position: absolute;
+	float: right;
+	right: 0;
+	top: 50px;
+	background: white;
+}
+
+.container .content .subcon .subconright .subconleftsides {
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.container .content .subcon .subconright .subconrightsides {
+	width: 50%;
+	height: auto;
+	float: right;
+}
+
+.container .content .subcon .subconright p{
+	font-size: 14px;
+	padding-left: 10px;
+
+}
+.container .content .subcon .subconright a{
+	text-decoration: none;
+	padding-left: 10px;
+}
+.btn{
+	margin-top: 30px;
+	padding: 5px 15px 5px 15px;
+	color: white;
+	background-color: #1FAE66;
+	border: 1px solid #C29E9A;
+	font-size: 15px;
+	font-family: 'Times New Roman', Times, serif;
+}

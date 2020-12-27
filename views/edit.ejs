@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Profile</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/userprofile.css">
+</head>
+<body>
+	<section class="header">
+		<h1>
+			User Profile Page
+		</h1>
+	</section>
+	<section class="container">
+
+		<div class="sidebar">
+			<div class="image">
+				<img src="assets/images/image.png">
+				<h3><a href="">Friends</a></h3>
+				<h4><a href="">Send Message</a></h4>				
+			</div>
+
+		</div>
+
+	<form method="POST" action="/userprofile">	
+		<div class="content">
+			<div class="menu">
+				<ul>
+					<li><a href="#" style="margin-left: -35px;">Profile</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Photos</a></li>
+					<li><a href="#">Friends</a></li>
+					<li><a href="#">Groups</a></li>
+				</ul>
+				
+			</div>
+			<div class="subcon">
+				<div class="subconabout">
+					<a href=""><img src="assets/images/man.png"></a>
+					<h2>about</h2>
+					<p><a href="">Edit</a></p>
+				</div>
+				<div class="sunconleft">
+					<div class="subconleftside" style="width: 35%;">
+						<p style="padding-bottom: 5px;">First Name:</p>
+						<p style="padding-bottom: 5px;">User Name:</p>
+						<p style="padding-bottom: 5px;">City:</p>
+						<p style="padding-bottom: 5px;">Birthday:</p>
+						<p style="padding-bottom: 5px;">Website:</p>
+					</div>
+					<div class="subconrightside" style="width: 65%;">
+						<p><input type="text" value="<%= info.FirstName %>" name="fname" size="25"></p>
+						<p><input type="text" value="<%= info.UserName %>" name="uname" size="25"></p>
+						
+						<p><input type="text" name="email" size="25"></p>
+						<p><input type="text" name="email" size="25"></p>
+						<p><input type="text" name="email" size="25"></p>
+					</div>
+				</div>
+				<div class="subconright">
+					<div class="subconleftsides">
+						<p style="padding-bottom: 5px;">Last Name:</p>
+						<p style="padding-bottom: 5px;">Email:</p>
+						<p style="padding-bottom: 5px;">Country:</p>
+						<p style="padding-bottom: 5px;">Interests:</p>
+						<p style="padding-bottom: 5px;">Phone:</p>
+					</div>
+					<div class="subconrightsides">
+						<p><input type="text" name="email" size="25"></p>
+						<a href=""><input type="text" name="email" size="25"></a>
+						<p><input type="text" name="email" size="25"></p>
+						<p><input type="text" name="email" size="25"></p>
+						<p><input type="text" name="email" size="25"></p>
+					</div>
+					<button class="btn" type="submit" value="submit"> UPDATE</button>
+				</div>
+			</div>	
+		</div>
+	</form>	
+	</section>
+</body>
+</html>

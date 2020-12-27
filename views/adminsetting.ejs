@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Setting</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/admin.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content ="5">
+</head>
+<body>
+	<section class="header">
+		<h1>
+			ADMIN
+		</h1>
+		<p><a href="logout">logout</a></p>
+	</section>
+
+	<section class="container">
+		<ul>
+			<li><a href="adminprofile" style="margin-left: -35px;">Profile</a></li>
+			<li>
+				<div class="dropdown">
+					<button class="dropbtn">Education</button>
+					<div class="dropdown-content">
+						<a href="admineduaddview">Add & View Education</a>
+						<a href="admineduupdatedelete">Update & Delete Education</a>
+					</div>
+				</div>
+			</li>
+			<li><a href="#">setter</a></li>
+			<li>
+				<div class="dropdown">
+					<button class="dropbtn">Category</button>
+					<div class="dropdown-content">
+						<a href="admincataddview">Add & View Category</a>
+						<a href="adminaddviewsubcat">Add SubCategory</a>
+						<a href="adminsubcatview">View SubCategory</a>
+						<a href="admincatupdatedelete">Update & Delete Category</a>
+					</div>
+				</div>	
+			</li>
+			<li style="border-right-style: none;"><a href="#">Settings</a></li>
+		</ul>
+	</section>
+
+	<section class="admincontainer">
+		<div class="content">
+		<form>
+			<div class="subcont">
+				<p style="text-transform: uppercase; font-weight: bold; border: 1px solid rgba(123,123,123,.4); font-size: 24px; margin-top: 8px; padding: 2px 5px; border-radius: 5px; ">Settings</p>
+			</div>
+			<div class="subcont">
+				<label>Name: </label>
+				<p><input type="text" name=""></p>
+			</div>
+			<div class="subcont">
+				<label>UserName: </label>
+				<p><input type="text" name=""></p>
+			</div>
+			<div class="subcont">
+				<label>Email: </label>
+				<p><input type="email" name=""></p>
+			</div>
+			<div class="subcont">
+				<label>Re_Email: </label>
+				<p><input type="email" name=""></p>
+			</div>
+			<div class="subcont">
+				<label>Password: </label>
+				<p><input type="password" name=""></p>
+			</div>
+			<div class="subcont">
+				<label>Re_Password: </label>
+				<p><input type="password" name=""></p>
+			</div>
+			<div class="subcont">
+				<label>Pin Code: </label>
+				<p><input type="number" name=""></p>
+			</div>
+			<div class="subcont" style="border-bottom-style: none;">
+				<p><input type="submit" name="" value="Submit"></p>
+			</div>
+		</form>
+		</div>
+	</section>
+
+</body>
+</html>

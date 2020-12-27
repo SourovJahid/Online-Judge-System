@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Profile</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/userprofile.css">
+</head>
+<body>
+	<section class="header">
+		<h1>
+			User Profile Page
+		</h1>
+	</section>
+	<section class="container">
+
+		<div class="sidebar">
+			<div class="image">
+				<img src="assets/images/image.png">
+				<h3><a href="">Friends</a></h3>
+				<h4><a href="">Send Message</a></h4>				
+			</div>
+
+		</div>
+		<div class="content">
+			<div class="menu">
+				<ul>
+					<li><a href="#" style="margin-left: -35px;">Profile</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Photos</a></li>
+					<li><a href="#">Friends</a></li>
+					<li><a href="#">Groups</a></li>
+				</ul>
+				
+			</div>
+			<div class="subcon">
+				<div class="subconabout">
+					<a href=""><img src="assets/images/man.png"></a>
+					<h2>about</h2>
+					<p><a href="edit">Edit</a></p>
+				</div>
+				<div class="sunconleft">
+					<div class="subconleftside">
+						<p>First Name:</p>
+						<p>User Name:</p>
+						<p>City:</p>
+						<p>Birthday:</p>
+						<p>Website:</p>
+					</div>
+					<div class="subconrightside">
+							<% if(info.FirstName==""){ %>
+								<p> NULL </p>
+							<% } %>
+							<% if(info.FirstName != ""){ %>
+								<p> <%= info.FirstName %></p>
+							<% } %>
+	
+							
+							<% if(info.UserName==""){ %>
+								<p> NULL </p>
+							<% } if(info.UserName != "") { %>
+								<p> <%= info.UserName %></p>
+							<% } %>
+	
+							<% if(info.Password==""){ %>
+								<p> NULL </p>
+							<% } if(info.Password != ""){ %>
+								<p> <%= info.Password %></p>
+							<% } %>
+		
+
+					</div>
+				</div>
+				<div class="subconright">
+					<div class="subconleftsides">
+						<p>Last Name:</p>
+						<p>Email:</p>
+						<p>Country:</p>
+						<p>Interests:</p>
+						<p>Phone:</p>
+					</div>
+					<div class="subconrightsides">
+							<% if(info.LastName==""){ %>
+								<p> NULL </p>
+							<% } %>
+							<% if(info.LastName != ""){ %>
+								<p> <%= info.LastName %></p>
+							<% } %>
+	
+							
+							<% if(info.Email==""){ %>
+								<p> NULL </p>
+							<% } if(info.Email != "") { %>
+								<a href=""> <%= info.Email %></a>
+							<% } %>
+	
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+</body>
+</html>
